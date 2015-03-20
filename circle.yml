@@ -1,0 +1,9 @@
+machine:
+  services:
+    - docker
+dependencies:
+  override:
+    - docker build -t test-ansible-in-docker .
+test:
+  override:
+    - docker run test-ansible-in-docker

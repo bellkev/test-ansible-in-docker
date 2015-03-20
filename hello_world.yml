@@ -1,0 +1,6 @@
+- name: hello
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - debug: msg="Hello World!"
